@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 :root{
     color-scheme: light dark;
-    --main-color: #047389;
+    --main-color: #198fa7;
     --secondary-color: #81a3c2;
     --background-color: #050505;
 }
@@ -76,7 +76,9 @@ th {
     text-align: center;
     font-weight: 600;
 }
-
+.EstudiosTabla th{
+    color:black !important;
+}
 
 section h2{
     font-size: 3em;
