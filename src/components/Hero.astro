@@ -1,0 +1,60 @@
+---
+const personalImageAlt = "Paúl Román";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
+import GitHubIcon from "@/components/icons/GitHub.astro";
+---
+
+<div class="max-w-4xl justify-between flex-wrap flex items-center">
+  <div class="md:max-w-[65%]">
+    <h1
+      class="text-4xl font-semibold text-gray-800 sm:text-5xl dark:text-white"
+    >
+      Hola, soy Paúl Román
+    </h1>
+
+    <h5
+      class="!text-2xl font-regular text-gray-800 sm:text-5xl dark:text-gray-300 my-3"
+    >
+      Fullstack web developer
+    </h5>
+    <Badge> Disponible para trabajar</Badge>
+    <p
+      class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-purple-500 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+    >
+      Soy un apasionado de la programación y el aprendizaje continuo. Futuro
+      ingeniero de software de la <strong>
+        <a href="https://www.epn.edu.ec"> EPN</a></strong
+      >. Soy de Quito, Ecuador 🇪🇨.<strong>
+        Tengo +1 año de experiencia trabajando en desarrollo.</strong
+      >
+    </p>
+
+    <nav class="flex flex-wrap gap-4 mt-8">
+      <SocialPill href="mailto:paulroman3d@gmail.com">
+        <MailIcon class="size-4" />
+        Contáctame
+      </SocialPill>
+      <SocialPill
+        href="https://www.linkedin.com/in/pa%C3%BAl-rom%C3%A1n-995a411b7/"
+      >
+        <LinkedInIcon class="size-4" />
+        LinkedIn
+      </SocialPill>
+      <SocialPill href="https://github.com/paulr10463">
+        <GitHubIcon class="size-4" />
+        Github
+      </SocialPill>
+    </nav>
+  </div>
+
+  <div class="max-w-[30%] bg-gradient-to-b from-black to-purple-500 rounded-full hidden md:block">
+    <img
+      class="rounded-full shadow-lg size-max"
+      src="/paulr.png"
+      alt={personalImageAlt}
+    />
+  </div>
+</div>
